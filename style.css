@@ -64,7 +64,7 @@ body {
 
 #image-container {
     flex: 1;
-    min-width: 300px; /* Ensures a minimum width for responsiveness */
+    min-width: 270px; /* Ensures a minimum width for responsiveness */
 }
 
 #image-container img {
