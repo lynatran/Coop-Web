@@ -1,0 +1,186 @@
+body {
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, #aaaaaa 1px, transparent 1px),
+      linear-gradient(to bottom, #aaaaaa 1px, transparent 1px);
+    background-color: #bfd2b6;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  auto;
+    position: relative;
+    margin-top: 60px;
+    width: 80%;
+    justify-content: center; /* Centers the buttons horizontally */
+
+}
+
+#main-container {
+    background-color: #f2eed7;
+    width: 80%;
+    position: relative;
+    padding: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 3px;
+    overflow: visible;
+}
+
+#main-container h1 {
+    font-family: Concert One;
+    color: #4a7c59;
+    position: relative;
+    margin-top: -55px;
+    display: flex;
+    font-size: 300%;
+}
+
+#main-container h2 {
+    font-family: Concert One;
+    color: #4a7c59;
+    position: relative;
+    margin-top: -55px;
+    display: flex;
+    font-size: 250%;
+    text-decoration: none;
+}
+
+#main-container p {
+    font-family: Josefin Sans;
+    color: #4a7c59;
+    position: relative;
+    margin-top: -15px;
+    font-size: 125%;
+}
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrapping of elements to keep within container */
+    align-items: flex-start; /* Align items at the start of the container */
+    gap: 20px; /* Space between the items */
+}
+
+#image-container {
+    flex: 1;
+    min-width: 300px; /* Ensures a minimum width for responsiveness */
+}
+
+#image-container img {
+    width: 100%;
+}
+
+#sub-container {
+    flex: 1;
+    min-width: 200px;
+    background: #8fc0a9;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+    padding: 15px;
+    height: auto;
+    position: relative;
+    word-break: break-word;
+}
+
+#sub-container h2 {
+    font-family: Concert One;
+    color: #f2eed7;
+    position: relative;
+    margin-top: -10px;
+    display: flex;
+    font-size: 250%;
+}
+
+#sub-container p {
+    font-family: Josefin Sans;
+    color: #f2eed7;
+    position: relative;
+    display: flex;
+    font-size: 140%;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-text svg {
+    flex-shrink: 0;
+}
+
+.icon-text p {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4a7c59;
+    font-size: 125%;
+    position: relative;
+}
+
+#wtr-container {
+    flex: 1;
+    gap: 10px;
+    background: #8fc0a9;
+    border-radius: 3px;
+    position: relative;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#button-container {
+    width: 20%;
+    gap: 10px;
+    margin-top: -60px;
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; /* Centers the buttons horizontally */
+}
+
+#button-container .button {
+    width: 150px; /* Set a fixed width */
+    max-width: 100%; /* Allows the button to shrink on smaller screens */
+    max-height: 100%; /* Prevents the button from getting too large */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    background-color: #62A787;
+    color: #FAF3DD;
+    padding: 7px;
+    font-size: 24px;
+    font-family: Josefin Sans;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+    border-radius: 3px; /* Adds rounded corners */
+}
+
+.button a:hover {
+    background-color: #4E8A6E;
+    transform: scale(1.02); /* Scale up slightly */
+}
+
+#home-button a {
+    justify-content: center;
+}
+
+#home-button .button {
+    width: 150px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    max-width: 100%; /* Allows the button to shrink on smaller screens */
+    max-height: 100%; /* Prevents the button from getting too large */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
