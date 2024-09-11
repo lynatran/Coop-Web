@@ -1,0 +1,301 @@
+body {
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, #aaaaaa 1px, transparent 1px),
+      linear-gradient(to bottom, #aaaaaa 1px, transparent 1px);
+    background-color: #bfd2b6;
+}
+
+ul {
+    font-family: Josefin Sans;
+    color: #4a7c59;
+    position: relative;
+    margin-top: -15px;
+    font-size: 125%;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  auto;
+    position: relative;
+    margin-top: 60px;
+    width: 90%;
+    justify-content: center; /* Centers the buttons horizontally */
+
+}
+
+#main-container {
+    background-color: #f2eed7;
+    width: 100%;
+    position: relative;
+    padding: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 3px;
+    overflow: visible;
+}
+
+#title-container {
+    width: 100%;
+}
+
+#title-container h1 {
+    font-family: Concert One;
+    color: #FAF3DD;
+    position: relative;
+    background-color: #4A7C59;
+    justify-content: center;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+    margin-top: -55px;
+    display: flex;
+    font-size: 300%;
+    text-align: center;
+}
+
+#main-container h2 {
+    font-family: Concert One;
+    color: #4a7c59;
+    position: relative;
+    margin-top: -15px;
+    display: flex;
+    font-size: 240%;
+}
+
+#main-container p {
+    font-family: Josefin Sans;
+    color: #4a7c59;
+    position: relative;
+    font-size: 125%;
+}
+
+#report-container h2 {
+    margin-top: 0px;
+}
+
+#image-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+}
+
+#image-container img {
+    max-width: 80%;
+    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    display: block; /* Removes inline image margins */
+    border-radius: 5px;
+    border: 3px solid #8fc0a9;
+}
+
+
+#image-multiple-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers images horizontally */
+    align-items: baseline; /* Centers images vertically */
+    flex-wrap: wrap; /* Ensures images wrap when there's not enough space */
+    gap: 10px; /* Adds some spacing between images */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+    #image-multiple-container {
+        flex-direction: column; /* Stacks images vertically on smaller screens */
+    }
+}
+
+#image-multiple-container img {
+    max-width: 40%;
+    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    display: block; /* Removes inline image margins */
+    border-radius: 5px;
+    border: 3px solid #8fc0a9;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-text svg {
+    flex-shrink: 0;
+}
+
+.icon-text p {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4a7c59;
+    font-size: 125%;
+    position: relative;
+}
+
+#wtr-container {
+    flex: 1;
+    gap: 10px;
+    background: #8fc0a9;
+    border-radius: 3px;
+    position: relative;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#button-container {
+    width: 150px;
+    gap: 10px;
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#button-container .button {
+    width: 150px; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    background-color: #62A787;
+    color: #FAF3DD;
+    padding: 7px;
+    font-size: 24px;
+    font-family: Josefin Sans;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+    border-radius: 3px; /* Adds rounded corners */
+}
+
+.button a:hover {
+    background-color: #4E8A6E;
+    transform: scale(1.02);
+}
+
+#home-button a {
+    justify-content: center;
+}
+
+#home-button .button {
+    width: 150px;
+    height: 50px; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the tab */
+.tab1 {
+    overflow: hidden;
+    border: 2px solid #8FC0A9;
+    background-color: #8FC0A9;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab1 button:hover {
+    background-color: #68B0AB;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab1 button.active {
+    background-color: #68B0AB;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #8FC0A9;
+    border-top: none;
+    font-family: Josefin Sans;
+    color: #4A7C59;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .tab2 {
+    overflow: hidden;
+    border: 2px solid #8FC0A9;
+    background-color: #8FC0A9;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab2 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab2 button:hover {
+    background-color: #68B0AB;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab2 button.active {
+    background-color: #68B0AB;
+  }
+
+    .tabcontent2 {
+        display: none;
+        padding: 6px 12px;
+        border: 2px solid #8FC0A9;
+        border-top: none;
+        font-family: Josefin Sans;
+        color: #4A7C59;
+        border-radius: 0px 0px 5px 5px;
+      }
+
+  table {
+    font-family: Josefin Sans;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  td, th {
+    border: 2px solid #8FC0A9;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #8FC0A9;
+  }
