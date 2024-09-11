@@ -299,3 +299,124 @@ ul {
   th {
     background-color: #8FC0A9;
   }
+
+  /* Global styles for mobile */
+@media (max-width: 768px) {
+    body {
+        background-size: 30px 30px; /* Smaller grid on mobile */
+    }
+
+    ul {
+        font-size: 100%; /* Adjust font size */
+        margin-top: 0; /* Fix margin for smaller screens */
+    }
+
+    #container {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 30px;
+        width: 100%; /* Full width */
+    }
+
+    #main-container {
+        padding: 15px; /* Reduce padding */
+        width: 95%; /* Full width */
+    }
+
+    #title-container h1 {
+        width: 80%; /* Adjust width */
+        font-size: 180%; /* Smaller title font size */
+        margin-top: -25px;
+    }
+
+    #main-container h2 {
+        font-size: 180%; /* Smaller font size for h2 */
+        margin-top: 0; /* Fix margins */
+    }
+
+    #main-container p {
+        font-size: 110%; /* Slightly smaller font for readability */
+    }
+
+    #image-container img {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    #image-multiple-container img {
+        max-width: 80%; /* Larger image sizes for better mobile visibility */
+    }
+
+    #button-container {
+        width: 100px; /* Smaller button container */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .button a {
+        font-size: 20px; /* Smaller font size */
+        padding: 5px; /* Reduce padding */
+    }
+
+    #home-button .button {
+        width: 100px; 
+        height: 40px; /* Adjust button size */
+    }
+
+    .tab1 button, .tab2 button {
+        padding: 10px 12px; /* Smaller tab button size */
+        font-size: medium; /* Smaller font */
+    }
+
+    table {
+        display: block; /* Stack table content */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    td, th {
+        padding: 6px; /* Smaller padding */
+    }
+
+    /* Additional small screen adjustments for better readability */
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+/* Very small screen optimization */
+@media (max-width: 500px) {
+    #container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #main-container {
+        width: 100%;
+    }
+
+    #title-container h1 {
+        font-size: 160%;
+        margin-top: -10px;
+    }
+
+    #image-multiple-container img {
+        max-width: 100%;
+        min-width: auto; /* Remove min-width to allow more flexibility */
+    }
+
+    .button a {
+        font-size: 18px; /* Further reduce button font size */
+        padding: 4px;
+    }
+
+    .tab1 button, .tab2 button {
+        padding: 8px 10px;
+        font-size: small; /* Adjust tab button size */
+    }
+
+    td, th {
+        padding: 4px;
+    }
+
+    #home-button .button {
+        width: 90px; 
+        height: 35px; 
+    }
+}
