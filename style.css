@@ -76,7 +76,7 @@ body {
     min-width: 200px;
     background: #8fc0a9;
     border-radius: 3px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+    
     padding: 15px;
     height: auto;
     position: relative;
@@ -167,7 +167,6 @@ body {
 
 .button a:hover {
     background-color: #4E8A6E;
-    transform: scale(1.02);
 }
 
 #home-button a {
