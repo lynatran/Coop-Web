@@ -14,6 +14,15 @@ ul {
     font-size: 125%;
 }
 
+ul ul {
+    font-size: inherit;
+    margin-top: 5px;
+}
+
+a {
+    color: #4B7C7B;
+}
+
 #container {
     display: flex;
     align-items: center;
@@ -34,6 +43,10 @@ ul {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-radius: 3px;
     overflow: visible;
+}
+
+#main-container ul, ul ul {
+    color: #4a7c59;
 }
 
 #title-container {
@@ -420,3 +433,129 @@ ul {
         height: 35px; 
     }
 }
+
+#column-container {
+    width: fit-content;
+    font-family: Josefin Sans;
+    color: #FAF3DD;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#column-container p {
+    color: #FAF3DD;
+}
+
+#column-container ul {
+    color: #FAF3DD;
+}
+
+#column-container ul ul {
+    color: #FAF3DD;
+}
+
+#column-container h3 {
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between columns */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+}
+
+.col {
+    flex: 1 1 calc(33.333% - 20px); /* Makes columns responsive and equal width */
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #579A7A; /* Optional: Background color */
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #8FC0A9;
+    border-radius: 8px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(38, 150, 115, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(47, 143, 124, 0.8);
+}
+
+.slider-and-bullets {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    gap: 10px; /* Adds spacing between the slider and the bullet points */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 20px 0;
+}
+
+.slider-and-bullets .slider {
+    flex: 1 1 40%; /* Takes 60% of the container's width, adjustable */
+}
+
+.slider-and-bullets ul {
+    flex: 1 1 40%; /* Ensures the list takes appropriate width */
+    margin: 0;
+    padding-left: 40px; /* Keeps indentation for bullet points */
+    list-style-position: outside;
+    display: flex; /* Enables flexbox for the list */
+    flex-direction: column; /* Stacks bullet points vertically */
+    justify-content: center; /* Centers text vertically with the slider */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .slider-and-bullets {
+        flex-direction: column; /* Stacks slider and bullet points vertically */
+        align-items: center; /* Centers content */
+    }
+
+    .slider-and-bullets .slider, .slider-and-bullets ul {
+        flex: 1 1 100%; /* Each takes full width */
+        max-width: 100%; /* Ensures they scale for smaller screens */
+    }
+}
+
+hr {
+    border-top: 2px dashed #8FC0A9;
+    border-radius: 2px;
+    width: 70%;
+  }
