@@ -1,0 +1,642 @@
+body {
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, #aaaaaa 1px, transparent 1px),
+      linear-gradient(to bottom, #aaaaaa 1px, transparent 1px);
+    background-color: #000000;
+}
+
+ul {
+    font-family: Josefin Sans;
+    color: #ffffff;
+    position: relative;
+    margin-top: -15px;
+    font-size: 125%;
+}
+
+ul ul {
+    font-size: inherit;
+    margin-top: 5px;
+}
+
+a {
+    color: #94b8cb;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  auto;
+    position: relative;
+    margin-top: 60px;
+    width: 90%;
+    justify-content: center; /* Centers the buttons horizontally */
+
+}
+
+#main-container {
+    background-color: #313131;
+    width: 100%;
+    position: relative;
+    padding: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 3px;
+    overflow: visible;
+}
+
+#main-container ul, ul ul {
+    color: #ffffff;
+}
+
+#title-container {
+    width: 100%;
+}
+
+#title-container h1 {
+    font-family: Concert One;
+    color: #000000;
+    position: relative;
+    background-color: #F4D10F;
+    justify-content: center;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+    margin-top: -55px;
+    display: flex;
+    font-size: 300%;
+    text-align: center;
+}
+
+#main-container h2 {
+    font-family: Concert One;
+    color: #ffffff;
+    position: relative;
+    margin-top: -15px;
+    display: flex;
+    font-size: 240%;
+}
+
+#main-container h3 {
+    font-family: Concert One;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    font-size: 200%;
+}
+
+#main-container p {
+    font-family: Josefin Sans;
+    color: #ffffff;
+    position: relative;
+    font-size: 125%;
+}
+
+#report-container h2 {
+    margin-top: 0px;
+}
+
+#image-logo {
+    display: flex; /* Enables flexbox */
+    justify-content: left; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+    margin-bottom: 20px;
+}
+
+#image-logo img {
+    max-width: 45%;
+    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    display: block; /* Removes inline image margins */
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+#image-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically */
+}
+
+#image-container img {
+    max-width: 80%;
+    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    display: block; /* Removes inline image margins */
+    border-radius: 5px;
+}
+
+
+#image-multiple-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers images horizontally */
+    align-items: baseline; /* Centers images vertically */
+    flex-wrap: wrap; /* Ensures images wrap when there's not enough space */
+    gap: 10px; /* Adds some spacing between images */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+    #image-multiple-container {
+        flex-direction: column; /* Stacks images vertically on smaller screens */
+    }
+}
+
+#image-multiple-container img {
+    max-width: 40%;
+    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    display: block; /* Removes inline image margins */
+    border-radius: 5px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-text svg {
+    flex-shrink: 0;
+}
+
+.icon-text p {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    font-size: 125%;
+    position: relative;
+}
+
+#wtr-container {
+    flex: 1;
+    gap: 10px;
+    background: #313131;
+    border-radius: 3px;
+    position: relative;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#button-container {
+    width: 150px;
+    gap: 10px;
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#button-container .button {
+    width: 150px; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    background-color: #313131;
+    color: #FAF3DD;
+    padding: 7px;
+    font-size: 24px;
+    font-family: Josefin Sans;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+    border-radius: 3px; /* Adds rounded corners */
+}
+
+.button a:hover {
+    background-color: #F4D10F;
+    color: #000000;
+    transform: scale(1.02);
+}
+
+#home-button a {
+    justify-content: center;
+}
+
+#home-button .button {
+    width: 150px;
+    height: 50px; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the tab */
+.tab1 {
+    overflow: hidden;
+    border: 2px solid #F4D10F;
+    background-color: #F4D10F;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab1 button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab1 button.active {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #F4D10F;
+    border-top: none;
+    font-family: Josefin Sans;
+    color: #4A7C59;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .tab2 {
+    overflow: hidden;
+    border: 2px solid #F4D10F;
+    background-color: #F4D10F;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab2 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab2 button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab2 button.active {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+    .tabcontent2 {
+        display: none;
+        padding: 6px 12px;
+        border: 2px solid #F4D10F;
+        border-top: none;
+        font-family: Josefin Sans;
+        border-radius: 0px 0px 5px 5px;
+      }
+
+  table {
+    font-family: Josefin Sans;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  td, th {
+    border: 2px solid #8FC0A9;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #8FC0A9;
+  }
+
+  /* Global styles for mobile */
+@media (max-width: 768px) {
+    body {
+        background-size: 30px 30px; /* Smaller grid on mobile */
+    }
+
+    ul {
+        font-size: 100%; /* Adjust font size */
+        margin-top: 0; /* Fix margin for smaller screens */
+    }
+
+    ol {
+        font-size: 100%; /* Adjust font size */
+        margin-top: 0; /* Fix margin for smaller screens */
+    }
+
+    #container {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 30px;
+        width: 100%; /* Full width */
+    }
+
+    #main-container {
+        padding: 15px; /* Reduce padding */
+        width: 95%; /* Full width */
+    }
+
+    #title-container h1 {
+        width: 80%; /* Adjust width */
+        font-size: 180%; /* Smaller title font size */
+        margin-top: -25px;
+    }
+
+    #main-container h2 {
+        font-size: 180%; /* Smaller font size for h2 */
+        margin-top: 0; /* Fix margins */
+    }
+
+    #main-container h3 {
+        font-size: 140%; /* Smaller font size for h2 */
+        margin-top: 0; /* Fix margins */
+    }
+
+    #main-container p {
+        font-size: 110%; /* Slightly smaller font for readability */
+    }
+
+    #image-container img {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    #image-multiple-container img {
+        max-width: 80%; /* Larger image sizes for better mobile visibility */
+    }
+
+    #button-container {
+        width: 100px; /* Smaller button container */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .button a {
+        font-size: 20px; /* Smaller font size */
+        padding: 5px; /* Reduce padding */
+    }
+
+    #home-button .button {
+        width: 100px; 
+        height: 40px; /* Adjust button size */
+    }
+
+    .tab1 button, .tab2 button {
+        padding: 10px 12px; /* Smaller tab button size */
+        font-size: medium; /* Smaller font */
+    }
+
+    table {
+        display: block; /* Stack table content */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    td, th {
+        padding: 6px; /* Smaller padding */
+    }
+
+    /* Additional small screen adjustments for better readability */
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+/* Very small screen optimization */
+@media (max-width: 500px) {
+    #container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #main-container {
+        width: 100%;
+    }
+
+    #title-container h1 {
+        font-size: 160%;
+        margin-top: -10px;
+    }
+
+    #image-multiple-container img {
+        max-width: 100%;
+        min-width: auto; /* Remove min-width to allow more flexibility */
+    }
+
+    .button a {
+        font-size: 18px; /* Further reduce button font size */
+        padding: 4px;
+    }
+
+    .tab1 button, .tab2 button {
+        padding: 8px 10px;
+        font-size: small; /* Adjust tab button size */
+    }
+
+    td, th {
+        padding: 4px;
+    }
+
+    #home-button .button {
+        width: 90px; 
+        height: 35px; 
+    }
+}
+
+#column-container {
+    width: fit-content;
+    font-family: Josefin Sans;
+    color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#column-container p {
+    color: #ffffff;
+}
+
+#column-container ul {
+    color: #ffffff;
+}
+
+#column-container ul ul {
+    color: #ffffff;
+}
+
+#column-container h3 {
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between columns */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+}
+
+.col {
+    flex: 1 1 calc(33.333% - 20px); /* Makes columns responsive and equal width */
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #000000; /* Optional: Background color */
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F4D10F;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #e2c311;
+}
+
+.slider-and-bullets {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    gap: 10px; /* Adds spacing between the slider and the bullet points */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 20px 0;
+}
+
+.slider-and-bullets .slider {
+    flex: 1 1 40%; /* Takes 60% of the container's width, adjustable */
+}
+
+.slider-and-bullets ul {
+    flex: 1 1 40%; /* Ensures the list takes appropriate width */
+    margin: 0;
+    padding-left: 40px; /* Keeps indentation for bullet points */
+    list-style-position: outside;
+    display: flex; /* Enables flexbox for the list */
+    flex-direction: column; /* Stacks bullet points vertically */
+    justify-content: center; /* Centers text vertically with the slider */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .slider-and-bullets {
+        flex-direction: column; /* Stacks slider and bullet points vertically */
+        align-items: center; /* Centers content */
+    }
+
+    .slider-and-bullets .slider, .slider-and-bullets ul {
+        flex: 1 1 100%; /* Each takes full width */
+        max-width: 100%; /* Ensures they scale for smaller screens */
+    }
+}
+
+hr {
+    border-top: 2px solid #F4D10F;
+    border-radius: 2px;
+    width: 95%;
+  }
+
+.image-and-text {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    gap: 10px; /* Adds spacing between the image and the text */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 20px 0;
+}
+
+.image-and-text .image {
+    flex: 1 1 50%; /* Image takes part of the width */
+    min-width: 500px;
+}
+
+.image-and-text .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* optional: rounded corners */
+    display: block;
+}
+
+.image-and-text .text {
+    flex: 1 1 40%; /* Text takes part of the width */
+    margin: 0;
+    min-width: 500px;
+}
+
+.image-and-text .text p {
+    font-family: Josefin Sans;
+    color: #4a7c59;
+    position: relative;
+    font-size: 125%;
+}
+
+ol {
+    font-family: Josefin Sans;
+    color: #ffffff;
+    position: relative;
+    margin-top: -15px;
+    font-size: 125%;
+}
+
+.highlight-container {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+}
