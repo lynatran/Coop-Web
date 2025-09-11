@@ -350,22 +350,26 @@ b {
     ul {
         font-size: 100%; /* Adjust font size */
         margin-top: 0; /* Fix margin for smaller screens */
+        text-align: left;
     }
 
     ol {
         font-size: 100%; /* Adjust font size */
         margin-top: 0; /* Fix margin for smaller screens */
+        text-align: left;
     }
 
     #container {
         flex-direction: column; /* Stack items vertically */
         margin-top: 30px;
         width: 100%; /* Full width */
+        text-align: center;
     }
 
     #main-container {
         padding: 15px; /* Reduce padding */
         width: 95%; /* Full width */
+        text-align: center;
     }
 
     #title-container h1 {
@@ -377,15 +381,18 @@ b {
     #main-container h2 {
         font-size: 180%; /* Smaller font size for h2 */
         margin-top: 0; /* Fix margins */
+        text-align: center;
     }
 
     #main-container h3 {
         font-size: 140%; /* Smaller font size for h2 */
         margin-top: 0; /* Fix margins */
+        text-align: center;
     }
 
     #main-container p {
         font-size: 110%; /* Slightly smaller font for readability */
+        text-align: center;
     }
 
     #image-container img {
@@ -436,6 +443,7 @@ b {
     #container {
         width: 100%;
         margin-top: 20px;
+        text-align: center;
     }
 
     #main-container {
@@ -607,7 +615,7 @@ hr {
 
 .image-and-text .image {
     flex: 1 1 50%; /* Image takes part of the width */
-    min-width: 500px;
+    min-width: 200px;
 }
 
 .image-and-text .image img {
@@ -620,7 +628,7 @@ hr {
 .image-and-text .text {
     flex: 1 1 40%; /* Text takes part of the width */
     margin: 0;
-    min-width: 500px;
+    min-width: 150px;
 }
 
 .image-and-text .text p {
