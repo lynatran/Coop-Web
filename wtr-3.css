@@ -22,6 +22,9 @@ ul ul {
 a {
     color: #94b8cb;
 }
+b {
+    color: #F4D10F;
+}
 
 #container {
     display: flex;
