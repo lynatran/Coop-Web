@@ -1,0 +1,626 @@
+:root {
+    --navy: #023b49;
+    --yellow: #ffcb05;
+    --yellow-edge: #e0ad00; /* darker yellow used for the raised "bubble" edge */
+    --yellow-soft: #ffe57a;
+    --cream: #fffae0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 20px 16px 60px;
+    background-size: 50px 50px;
+    background-image:
+      linear-gradient(to right, #aaaaaa 1px, transparent 1px),
+      linear-gradient(to bottom, #aaaaaa 1px, transparent 1px);
+    background-color: var(--cream);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+}
+
+a {
+    color: var(--navy);
+}
+
+b {
+    color: var(--navy);
+}
+
+/* Visible keyboard focus for links and buttons */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--navy);
+    outline-offset: 3px;
+}
+
+/* ---------- Home button ---------- */
+#home-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--yellow);
+    color: var(--navy);
+    padding: 9px 18px 6px;
+    border-radius: 999px;
+    box-shadow: 0 4px 0 var(--yellow-edge);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#home-button a:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--yellow-edge);
+}
+
+#home-button svg {
+    margin-top: -3px;
+}
+
+/* ---------- Page card ---------- */
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+#main-container {
+    background-color: #ffffff;
+    padding: 20px 30px 40px;
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+#title-container h1 {
+    font-family: 'Concert One', sans-serif;
+    font-weight: normal;
+    color: var(--navy);
+    background-color: var(--yellow);
+    width: fit-content;
+    max-width: 90%;
+    margin: -58px auto 0;
+    padding: 8px 40px;
+    border-radius: 999px;
+    box-shadow: 0 5px 0 var(--yellow-edge);
+    font-size: 300%;
+    text-align: center;
+}
+
+/* Keeps every section in one centered, readable column */
+#report-container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* ---------- Text ---------- */
+#main-container h2,
+#main-container h3,
+#main-container h4 {
+    font-family: 'Concert One', sans-serif;
+    font-weight: normal;
+    color: var(--navy);
+}
+
+#main-container h2 {
+    font-size: 240%;
+    text-align: center;
+    margin: 50px 0 20px;
+    scroll-margin-top: 20px;
+}
+
+/* Little yellow pill under each section title */
+#main-container h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 8px;
+    margin: 8px auto 0;
+    background-color: var(--yellow);
+    border-radius: 999px;
+}
+
+#main-container h3 {
+    font-size: 190%;
+    margin: 10px 0 15px;
+}
+
+#main-container h4 {
+    font-size: 150%;
+    margin: 30px 0 10px;
+}
+
+#main-container p {
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+#main-container ul {
+    font-size: 125%;
+    line-height: 1.45;
+    padding-left: 1.4em;
+}
+
+#main-container li {
+    margin-bottom: 6px;
+}
+
+hr {
+    border: 0;
+    border-top: 6px dotted var(--yellow);
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* ---------- Term at a glance ---------- */
+.glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 0 0 20px;
+}
+
+.glance div {
+    background-color: var(--cream);
+    border: 2px solid var(--yellow-soft);
+    border-radius: 18px;
+    padding: 12px 16px;
+}
+
+.glance dt {
+    font-family: 'Concert One', sans-serif;
+    color: var(--navy);
+    font-size: 125%;
+}
+
+.glance dd {
+    margin: 4px 0 0;
+    font-size: 110%;
+}
+
+/* ---------- Jump-to section pills ---------- */
+.page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 10px 0 20px;
+}
+
+.page-nav a {
+    background-color: var(--yellow);
+    color: var(--navy);
+    padding: 9px 16px 6px;
+    border-radius: 999px;
+    box-shadow: 0 4px 0 var(--yellow-edge);
+    font-weight: bold;
+    font-size: 110%;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-nav a:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--yellow-edge);
+}
+
+/* ---------- Images ---------- */
+#image-logo {
+    display: flex;
+    justify-content: center;
+}
+
+#image-logo img {
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    margin: 30px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.image-container .image-placeholder {
+    width: 90%;
+}
+
+.image-multiple-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 10px 0 20px;
+}
+
+.image-multiple-container img {
+    max-width: calc(50% - 8px);
+    min-width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.image-multiple-container .image-placeholder {
+    width: calc(50% - 8px);
+    min-width: 200px;
+}
+
+/* Placeholder boxes - swap these for real <img> tags */
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 240px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 3px dashed var(--navy);
+    border-radius: 20px;
+    background-color: var(--cream);
+    color: var(--navy);
+    font-size: 125%;
+}
+
+/* ---------- Boxes ---------- */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 25px 0 35px;
+}
+
+.box {
+    background-color: var(--yellow);
+    border-radius: 22px;
+    padding: 18px 24px 12px;
+    box-shadow: 0 6px 0 var(--yellow-edge);
+}
+
+.box.cream {
+    background-color: var(--cream);
+    border: 2px solid var(--yellow-soft);
+    box-shadow: none;
+}
+
+#main-container .box h4 {
+    margin: 0 0 12px;
+    font-size: 140%;
+}
+
+#main-container .box ul {
+    font-size: 112%;
+    margin: 0 0 8px;
+}
+
+/* Skills shown as bubbly tags */
+#main-container ul.chips {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#main-container .chips li {
+    background-color: #ffffff;
+    color: var(--navy);
+    border-radius: 999px;
+    padding: 7px 14px 4px;
+    margin: 0;
+    font-size: 92%;
+    line-height: 1.3;
+}
+
+/* ---------- Project overview cards ---------- */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 25px 0 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--cream);
+    border: 2px solid var(--yellow-soft);
+    border-radius: 22px;
+    padding: 16px 20px 18px;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--yellow);
+    box-shadow: 0 6px 0 var(--yellow);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.card-emoji {
+    font-size: 200%;
+}
+
+.card-title {
+    font-family: 'Concert One', sans-serif;
+    color: var(--navy);
+    font-size: 150%;
+}
+
+.card-text {
+    font-size: 110%;
+    line-height: 1.4;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--navy);
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 6px 12px 3px;
+    font-weight: bold;
+    font-size: 95%;
+    white-space: nowrap;
+}
+
+.badge.new {
+    background-color: var(--yellow);
+    color: var(--navy);
+}
+
+/* ---------- Project sections ---------- */
+.project {
+    margin-top: 60px;
+    scroll-margin-top: 20px;
+}
+
+.project-header {
+    text-align: center;
+}
+
+#main-container .project-header h3 {
+    margin-top: 8px;
+}
+
+/* Speech bubble quote */
+.quote-bubble {
+    position: relative;
+    max-width: 640px;
+    margin: 30px auto 40px;
+    padding: 20px 28px 16px;
+    background-color: var(--yellow);
+    border-radius: 28px;
+}
+
+.quote-bubble::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: -16px;
+    border-style: solid;
+    border-width: 16px 18px 0 0;
+    border-color: var(--yellow) transparent transparent transparent;
+}
+
+#main-container .quote-bubble p {
+    margin: 0;
+    text-align: center;
+    color: var(--navy);
+    font-size: 130%;
+    font-style: italic;
+}
+
+/* ---------- Goals tabs ---------- */
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--yellow);
+    padding: 8px;
+    border-radius: 999px;
+}
+
+.tab button {
+    background-color: transparent;
+    color: var(--navy);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 12px 20px 9px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.tab button:hover {
+    background-color: rgba(2, 59, 73, 0.12);
+}
+
+.tab button.active {
+    background-color: var(--navy);
+    color: #ffffff;
+}
+
+.tabcontent {
+    margin-top: 14px;
+    padding: 6px 26px 22px;
+    border: 3px solid var(--yellow);
+    border-radius: 24px;
+}
+
+#main-container p.placeholder {
+    border: 3px dashed var(--yellow);
+    border-radius: 16px;
+    padding: 12px 16px 9px;
+    color: #555555;
+    font-style: italic;
+}
+
+/* ---------- Back to top bubble ---------- */
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    color: var(--navy);
+    border-radius: 50%;
+    box-shadow: 0 4px 0 var(--yellow-edge), 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.to-top:hover {
+    transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
+
+/* ---------- Tablets and phones ---------- */
+@media (max-width: 768px) {
+    body {
+        background-size: 30px 30px; /* Smaller grid on mobile */
+    }
+
+    #container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #main-container {
+        padding: 15px 16px 30px;
+        border-radius: 22px;
+    }
+
+    #title-container h1 {
+        font-size: 180%;
+        padding: 6px 22px;
+        margin-top: -42px;
+    }
+
+    #main-container h2 {
+        font-size: 180%;
+    }
+
+    #main-container h3 {
+        font-size: 150%;
+    }
+
+    #main-container h4 {
+        font-size: 130%;
+    }
+
+    #main-container p {
+        font-size: 110%;
+    }
+
+    #main-container ul {
+        font-size: 105%;
+    }
+
+    .boxes,
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container img,
+    .image-container .image-placeholder {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .image-multiple-container img,
+    .image-multiple-container .image-placeholder {
+        max-width: 100%;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .tab {
+        border-radius: 22px;
+    }
+
+    .tab button {
+        flex: 1 1 auto;
+        padding: 10px 14px 7px;
+        font-size: medium;
+    }
+
+    .tabcontent {
+        padding: 4px 16px 18px;
+    }
+
+    #main-container .quote-bubble p {
+        font-size: 115%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding-top: 16px;
+    }
+
+    #home-button a {
+        font-size: 18px;
+        padding: 7px 14px 5px;
+    }
+
+    #title-container h1 {
+        font-size: 150%;
+        margin-top: -36px;
+    }
+
+    .glance {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-nav a {
+        font-size: 100%;
+        padding: 8px 13px 5px;
+    }
+
+    .tab button {
+        font-size: small;
+    }
+}
